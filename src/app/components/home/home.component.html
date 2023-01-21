@@ -1,0 +1,22 @@
+<div class="home-container">
+    <header>
+        <a href="//gmail.com">Gmail</a>
+        <a href="//google.com/images">Images</a>
+        <mat-icon class="google-more">apps</mat-icon>
+        <button>Sign in</button>
+    </header>
+
+    <main>
+        <img src="assets/googlelogo.png" alt="logo">
+        <div class="search-box">
+            <form #form="ngForm" (ngSubmit)="search(form)">
+                <app-search></app-search>
+            </form>
+        </div>
+
+        <div class="google-buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </main>
+</div>

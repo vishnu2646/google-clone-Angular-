@@ -1,0 +1,87 @@
+.home-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    
+    a{
+        text-decoration: none;
+        color: #727272;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        margin-left: auto;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 14px;
+
+        a{
+            color: #272727;
+        }
+
+        > * {
+            margin-left: 18px;
+            cursor: pointer;
+        }
+
+        button{
+            border: none;
+            background-color: #4386FA;
+            color: #ffffff;
+            outline: none;
+            padding: 7px 15px;
+            font-weight: 400;
+            font-size: smaller;
+        }
+
+        .google-more{
+            color: #727272;
+        }
+    }
+
+    main {
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 272px;
+        }
+
+        .search-box{
+            width: 600px;
+            position: relative;
+            margin-top: 25px;
+        }
+
+        .google-buttons{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 38px;
+            position: relative;
+
+            button {
+                border: 0;
+                outline: none;
+                padding: 10px 20px;
+                margin-right: 10px;
+                font-size: 14px;
+                color: #5F6368;
+                background-color: #F4F4F4;
+
+                &:hover{
+                    cursor: pointer;
+                    border: 1px solid #c6c6c6;
+                    border-radius: 3px;
+                    box-shadow: 0 1px 1px rbga(#000, 0.1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<div class="search-bar">
+    <input 
+        type="text" 
+        name="search_term" 
+        [(ngModel)]="currentTermValue"
+        value="{{ currentTermValue }}"
+        autocomplete="off"
+    >
+    <div
+        [ngClass]="{
+            'left-icon': leftIcon === 'true'
+        }"
+    >
+        <mat-icon class="search_icon">search_outline</mat-icon>
+    </div>
+
+    <div
+        [ngClass]="{
+            'right-icon': rightIcon === 'true'
+        }"
+    >
+        <mat-icon class="search_icon" style="margin-right: 10px;">mic</mat-icon>
+        <mat-icon class="search_icon">
+            <span class="material-symbols-outlined">
+                center_focus_strong
+            </span>
+        </mat-icon>
+    </div>
+</div>
