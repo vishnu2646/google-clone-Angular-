@@ -29,20 +29,7 @@
     </header>
 
     <main *ngIf="loading">
-        <div class="spinner">
-            <div class="lds-roller">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        
-            <div>Loading...</div>
-        </div>
+        <app-spinner></app-spinner>
     </main>
 
     <main class="search_results" *ngIf="results?.items?.length && loading === false">
